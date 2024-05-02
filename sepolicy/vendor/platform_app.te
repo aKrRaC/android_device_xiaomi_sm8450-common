@@ -1,2 +1,5 @@
 # Camera
 get_prop(platform_app, qemu_hw_prop)
+
+# Dolby
+hal_client_domain(platform_app, hal_dms)
