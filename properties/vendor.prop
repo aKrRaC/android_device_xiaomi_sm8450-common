@@ -179,6 +179,7 @@ vendor.gralloc.disable_ubwc=0
 
 # HWUI
 debug.hwui.use_hint_manager=true
+ro.hwui.render_ahead=10
 
 # Incremental
 ro.incremental.enable=yes
