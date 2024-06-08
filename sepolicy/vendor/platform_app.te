@@ -1,0 +1,2 @@
+# Camera
+get_prop(platform_app, qemu_hw_prop)
