@@ -232,6 +232,7 @@ $(foreach sku, $(call to-upper, $(DEVICE_MANIFEST_SKUS)), \
         $(COMMON_PATH)/vintf/manifest.xml \
         $(COMMON_PATH)/vintf/manifest_xiaomi.xml \
         $(if $(TARGET_NFC_SUPPORTED_SKUS),$(COMMON_PATH)/vintf/manifest_no_nfc.xml,) \
+        vendor/xiaomi/dolby/vintf/manifest_dolby.xml \
     ))
 
 ifneq ($(TARGET_NFC_SUPPORTED_SKUS),)
@@ -243,7 +244,8 @@ endif
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/pixelstar/config/device_framework_matrix.xml
+    vendor/pixelstar/config/device_framework_matrix.xml \
+    vendor/xiaomi/dolby/vintf/framework_compatibility_matrix_dolby.xml
 
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/vintf/framework_manifest.xml
 
